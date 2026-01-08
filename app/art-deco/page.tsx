@@ -1,5 +1,7 @@
+'use client'
+
 import ArtDecoLanding from '@/components/ArtDecoLanding'
 
-export default function Home() {
+export default function ArtDecoPage() {
   return <ArtDecoLanding />
 }
