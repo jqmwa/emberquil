@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
 @font-face {
   font-family: 'SF UI Display';
   src: url('https://fonts.cdnfonts.com/css/sf-ui-display') format('woff2');
@@ -9,6 +11,18 @@
   font-style: normal;
   font-display: swap;
 }
+
+/* Glitch Goblin font - using Orbitron as substitute (Glitch Goblin needs to be downloaded from https://ggbot.itch.io/glitch-goblin-font) */
+/* To use actual Glitch Goblin font, download and add to /public/fonts/ and uncomment below */
+/*
+@font-face {
+  font-family: 'Glitch Goblin';
+  src: url('/fonts/GlitchGoblin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+*/
 
 * {
   margin: 0;

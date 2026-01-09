@@ -1,5 +1,5 @@
-import ArtDecoLanding from '@/components/ArtDecoLanding'
+import EmberQuillLanding from '@/components/EmberQuillLanding'
 
 export default function Home() {
-  return <ArtDecoLanding />
+  return <EmberQuillLanding />
 }

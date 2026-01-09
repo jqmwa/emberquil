@@ -17,6 +17,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ['SF UI Display', 'system-ui', 'sans-serif'],
+        'glitch': ['Orbitron', 'sans-serif'], // Using Orbitron as substitute for Glitch Goblin
+        'mono': ['Roboto Mono', 'monospace'],
       },
       backdropBlur: {
         xs: '2px',
