@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { HomeStateProvider } from '@/contexts/HomeStateContext'
-import LeftSideNav from '@/components/LeftSideNav'
+import UnifiedNavbar from '@/components/UnifiedNavbar'
 
 export const metadata: Metadata = {
-  title: 'EmberQuill Studios - For Fun',
-  description: 'An artist hub providing equity, housing, and opportunities for creative professionals',
+  title: 'EmberQuill Studios',
+  description: 'Black-owned manga studio providing equity, housing, and opportunities for creative professionals. NERV-themed cyberpunk aesthetic.',
 }
 
 export default function RootLayout({
@@ -17,10 +17,8 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <HomeStateProvider>
-          <LeftSideNav />
-          <div className="lg:ml-64">
-            {children}
-          </div>
+          <UnifiedNavbar />
+          {children}
         </HomeStateProvider>
       </body>
     </html>

@@ -1,13 +1,48 @@
-# One-Page Landing Page Creation Prompt
+# EmberQuill Studios Landing Page
 
-**Selected Design Style: Art Deco**
+**Selected Design Style: NERV Cyberpunk Theme**
 
 ---
 
-## Prompt
+## Overview
 
-Conceive an innovative business or service concept for a single-page landing page designed in the Art Deco aesthetic. This style should evoke feelings of elegant sophistication, luxurious refinement, and the confident optimism of a golden age. Visitors should experience an immediate sense of premium quality and timeless beauty as they arrive - the visual hierarchy should guide them through a journey that feels like stepping into an exclusive salon or entering a beautifully preserved heritage building. The single-page design must flow with the geometric precision and ornamental richness that defines this movement, where every element feels intentionally placed and every scroll reveals another layer of visual luxury. Incorporate vibrant yet sophisticated color palettes - rich golds, deep emerald greens, midnight blues, and warm corals - as these chromatic choices will enhance the emotional impact and create the sense of opulent celebration that Art Deco embodies. The page should feel like a complete narrative experience, beginning with a grand entrance and culminating in an irresistible call-to-action that feels as sophisticated as the design itself.
+EmberQuill Studios is a Black-owned manga studio with a unified NERV-inspired cyberpunk aesthetic. ## Design Philosophy - NERV Aesthetic
 
-The design philosophy must prioritize the emotional sensation of refined luxury and architectural grandeur. Typography should feel authoritative yet graceful - think of elegant serif faces that command respect while maintaining approachability, with careful attention to letter-spacing that creates a sense of breathing elegance. Interactions and animations should feel smooth and deliberate, like the movement of a luxury elevator or the careful unfolding of an architectural blueprint - precise, fluid, and never rushed. As visitors journey through this single cohesive page, they should experience an emotional progression: initial wonder and admiration at the visual sophistication, building to curiosity and engagement as they discover the service or product being offered, and culminating in a sense of confident desire and trust that compels them to take action. Every hover state, every scroll reveal, every transition should reinforce the feeling of interacting with something beautifully crafted and meticulously designed. The page should never feel static - even in stillness, it should suggest the dynamic energy of the Jazz Age, the excitement of forward progress, and the celebration of human achievement.
+The design evokes the feeling of an underground command terminal in a cyberpunk facility. Deep oceanic greens meet warning-sign orange. Phosphor glow on aging CRT monitors. The quiet hum of industrial control terminals meets the melancholic warmth inspired by Wong Kar-wai's cinematography.
 
-Think of the abstract qualities found in the grand lobbies of 1920s skyscrapers, where geometric patterns in marble floors meet soaring vertical elements and intricate metalwork - spaces that felt simultaneously massive and intimate, industrial and artisanal. Consider the emotional resonance of luxury ocean liners from the era, where every surface was a canvas for geometric ornamentation, where form served both function and celebration. The design should capture the feeling of attending an exclusive gala during the height of modernist optimism - where technology and art converged, where the future felt bright and achievable, where craftsmanship was paramount and every detail mattered. Reference the sophisticated restraint found in the work of artisans who understood that true luxury comes not from excess but from perfect proportion, from the careful balance of ornament and space. The page should feel like encountering a perfectly preserved piece of architectural history - it should inspire awe not through flashiness but through the quiet confidence of refined execution, the emotional quality of spaces designed for both utility and beauty, the visual sophistication that comes from understanding that design is both science and art. These abstract references should inform every pixel, every interaction, every moment of the scrolling experience, creating a single-page landing page that feels less like a website and more like entering a carefully curated space that honors both the past and the future.
+### Visual Language
+
+- **Terminal Interface**: Monospace typography, sharp geometric forms, minimal 2px borders
+- **CRT Effects**: Subtle scan lines, phosphor glow, terminal flicker animations
+- **Color Story**: Deep void background (#0a1612) with muted sage text (#8fb3a5) and signal orange accents (#e85d04)
+- **Glassmorphism**: Subtle backdrop blur effects creating depth without heaviness
+- **Mobile-First**: Unified responsive navigation, clean information hierarchy
+
+### Content Hierarchy (60/30/10)
+
+**60% - Manga Studio & Artists**
+The primary focus showcases EmberQuill Studios' mission, the 4 featured artists (Blue Takatsuki, KittyWitxh, Artist Kai, Suppoku), Book One: The Last War, studio facilities, and the origin story. This content emphasizes the 5-year contracts, housing provided, and equitable design principles.
+
+**30% - Artist Assets & Community**
+Secondary content featuring the plush collection, level-up progression system, community benefits, and engagement opportunities. Balances commercial offerings with community building.
+
+**10% - Crypto & Rewards**
+Minimal but present: Shiba Inu currency integration, NFT minting options, Founder's Badge, and weekly airdrops. Crypto elements support the economy without dominating the experience.
+
+### User Experience
+
+Mobile-first unified navigation replaces separate menu components. Users encounter a terminal-style interface that feels precise, technical, yet warm. Every interaction reinforces the feeling of accessing a secure creative facility where artists thrive and honest work gets rewarded.
+
+The single-page flow guides visitors from initial system initialization (hero) through studio information, artist profiles, featured work, community systems, and finally crypto integration—ending with a terminal status footer.
+
+### Technical Implementation
+
+- **Kit Components**: Reusable Button, Card, Section, Container, Badge, and Divider components
+- **8px Grid System**: Consistent spacing throughout
+- **Typography**: Share Tech Mono for body, Orbitron for displays
+- **Animations**: Terminal-style transitions (150ms), subtle flicker effects, phosphor glow
+- **Performance**: Optimized with Next.js 14, lazy loading, responsive images
+
+### Brand Voice
+
+Technical yet warm. Command terminal meets artist studio. Copy is concise, impactful, using the monospace aesthetic. The tone suggests an underground facility running a quiet revolution in creator empowerment.
