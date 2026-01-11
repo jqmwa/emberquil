@@ -129,6 +129,4 @@ See [DESIGN_SYSTEM.md](./DESIGN_SYSTEM.md) for complete design guidelines, color
 
 **EmberQuill Studios** - Black-owned manga studio  
 Terminal ID: EQS-NERV-2026  
-Status: ONLINE
-
----*"Welcome to the underground facility. Here in the clouds, everything's brighter."*
+Status: ONLINE---*"Welcome to the underground facility. Here in the clouds, everything's brighter."*

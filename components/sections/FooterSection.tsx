@@ -46,7 +46,7 @@ export default function FooterSection() {
               </div>
             </Link>
             <p className="text-sm text-nerv-sage/60 font-mono leading-relaxed mb-4">
-              Black-owned manga studio. Providing housing, contracts, and opportunities 
+              State of the art manga studio. Providing housing, contracts, and opportunities 
               for creative professionals.
             </p>
             <div className="flex items-center gap-3">
