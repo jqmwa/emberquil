@@ -21,10 +21,9 @@ export default function StorySection() {
         <Card variant="default" className="p-6 md:p-10" glow>
           <div className="space-y-6 text-nerv-sage/80 font-mono leading-relaxed">
             <p className="text-base md:text-lg">
-              The Last War is a project started and created by Cedric. It began as a small 
-              discord of only 5-7 people and a lot of skepticism. Throughout the last 6 months, 
-              Cedric has proven himself as someone that's honest, kind, and a serious builder. 
-              He is passionate about his work and his project.
+              EmberQuill Studios began as a small discord of only 5-7 people and a lot of 
+              skepticism. Throughout the last 6 months, Shue has proven himself as someone that's 
+              honest, kind, and a serious builder. He is passionate about his work and his project.
             </p>
 
             <div className="border-l-4 border-nerv-orange pl-6 py-2 bg-nerv-orange/5">
@@ -34,7 +33,7 @@ export default function StorySection() {
             </div>
 
             <p className="text-base md:text-lg">
-              We plan to bring homemade manga, anime, and propel the digital art community 
+              We publish homemade manga, anime, and propel the digital art community 
               further by employing an honest, and equitable labor route. The artists of these 
               various projects are the recipients of any funds given to their designated work.
             </p>

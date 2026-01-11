@@ -54,9 +54,11 @@ export default function BookOneSection() {
             <div className="space-y-4 mb-6">
               <Card variant="light" className="p-4 border-l-4 border-nerv-orange">
                 <p className="text-nerv-sage/80 font-mono leading-relaxed">
-                  A book that says a lot about both people, places, and 3rd things that are 
-                  the world hence why it is be unreal. A story of conflict, identity, and 
-                  the spaces between what we know and what we imagine.
+                  A scar tells a story. A festering wound, a possibility.
+                  <br /><br />
+                  Over a decade, the world had all but submitted itself to the grasp of T.E.C., a technology that was not just awe-inspiring but also terrifying in its potential. Each global and third-world power had begun to give in to the time's true current modern technology that would provide the ultimate security of one's information and demise- the birth of The Encrypted Card. TEC, for short, not only absolved the issue of ever misplacing electronic-influenced gadgets but united them under one cause: To oversee the world and play its God.
+                  <br /><br />
+                  Join multiple casts on a compelling quest of moral conflicts, mistaken identities and the spaces between what we know and what we imagine.
                 </p>
               </Card>
 

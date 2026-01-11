@@ -30,7 +30,7 @@ export default function HeroSection() {
 
           <div className="space-y-4 mb-8">
             <p className="text-lg md:text-xl text-nerv-sage/80 font-mono leading-relaxed">
-              A Black-owned manga studio where creative vision meets equitable design. 
+              A State of the Art manga studio where creative vision meets equitable design. 
               We provide housing, 5-year contracts, and a space for artists to thrive.
             </p>
             

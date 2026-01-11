@@ -131,6 +131,4 @@ See [DESIGN_SYSTEM.md](./DESIGN_SYSTEM.md) for complete design guidelines, color
 Terminal ID: EQS-NERV-2026  
 Status: ONLINE
 
----
-
-*"Welcome to the underground facility. Here in the clouds, everything's brighter."*
+---*"Welcome to the underground facility. Here in the clouds, everything's brighter."*

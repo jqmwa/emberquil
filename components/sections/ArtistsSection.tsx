@@ -4,7 +4,7 @@ import { Section, Container, Card, Badge } from '../kit'
 
 const artists = [
   {
-    name: 'Blue Takatsuki',
+    name: 'Shue',
     role: 'Founder & CEO',
     color: '#4CAA8D',
     bio: 'Shue, a quiet and introspective soul, was born amidst the silent serenity of a moonlit night. With a delicate touch, Shue weaved beauty and tranquility into every word of his stories. Inspired by delicate blossoms dancing upon the wind, his art evokes calm thought and serenity. "Words are wind, after all."',
