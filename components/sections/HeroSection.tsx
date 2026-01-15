@@ -1,17 +1,59 @@
 'use client'
 
+import { useState, useRef } from 'react'
 import { Section, Container, Button, Card } from '../kit'
 
 export default function HeroSection() {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  const [isHovering, setIsHovering] = useState(false)
+  const containerRef = useRef<HTMLDivElement>(null)
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (containerRef.current) {
+      const rect = containerRef.current.getBoundingClientRect()
+      setMousePosition({
+        x: e.clientX - rect.left,
+        y: e.clientY - rect.top
+      })
+    }
+  }
+
   return (
-    <Section className="min-h-[80vh] flex items-center relative overflow-hidden">
-      {/* Terminal grid background */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `linear-gradient(#3a7a8c 1px, transparent 1px), linear-gradient(90deg, #3a7a8c 1px, transparent 1px)`,
-          backgroundSize: '50px 50px'
-        }} />
+    <div
+      ref={containerRef}
+      className="relative min-h-[80vh] flex items-center overflow-hidden"
+      onMouseMove={handleMouseMove}
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
+    >
+      {/* Base grid background */}
+      <div className="absolute inset-0" style={{ zIndex: 0 }}>
+        <div 
+          className="absolute inset-0" 
+          style={{
+            backgroundImage: `linear-gradient(#3a7a8c 1px, transparent 1px), linear-gradient(90deg, #3a7a8c 1px, transparent 1px)`,
+            backgroundSize: '50px 50px',
+            opacity: 0.1
+          }} 
+        />
       </div>
+
+      {/* Brightened grid layer - same grid pattern, higher opacity, radial mask around cursor */}
+      {isHovering && (
+        <div 
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            backgroundImage: `linear-gradient(#e85d04 1px, transparent 1px), linear-gradient(90deg, #e85d04 1px, transparent 1px)`,
+            backgroundSize: '50px 50px',
+            opacity: 0.5,
+            maskImage: `radial-gradient(circle 300px at ${mousePosition.x}px ${mousePosition.y}px, black 0%, transparent 70%)`,
+            WebkitMaskImage: `radial-gradient(circle 300px at ${mousePosition.x}px ${mousePosition.y}px, black 0%, transparent 70%)`,
+            zIndex: 1
+          }}
+        />
+      )}
+
+      <Section className="min-h-[80vh] flex items-center relative w-full z-10">
 
       <Container size="lg" className="relative z-10">
         <div className="max-w-4xl">
@@ -47,9 +89,17 @@ export default function HeroSection() {
             <Button variant="primary" size="lg">
               Apply to Studio
             </Button>
-            <Button variant="outline" size="lg">
-              View Our Work
-            </Button>
+            <div className="game-button-wrapper">
+              <div className="sparkle"></div>
+              <div className="sparkle"></div>
+              <div className="sparkle"></div>
+              <div className="sparkle"></div>
+              <div className="sparkle"></div>
+              <div className="sparkle"></div>
+              <Button variant="outline" size="lg" className="game-button">
+                <span className="game-button-text">View Our Work</span>
+              </Button>
+            </div>
           </div>
 
           {/* Stats */}
@@ -72,6 +122,7 @@ export default function HeroSection() {
           </div>
         </div>
       </Container>
-    </Section>
+      </Section>
+    </div>
   )
 }
